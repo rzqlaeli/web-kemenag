@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sekjen.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+      <title>Kemenag Lebak</title>
+</head>
+
+<header>
+  <img src="img/header1.png" class="img-fluid" alt="header" style="width: 100%; height: auto;">
+</header>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1E2A5E;">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Profil
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+              <li><a class="dropdown-item" href="visi-misi.html">Visi dan Misi</a></li>
+              <li><a class="dropdown-item" href="tugas-fungsi.html">Tugas dan Fungsi</a></li>
+              <li><a class="dropdown-item" href="tujuan.html">Tujuan</a></li>
+              <li><a class="dropdown-item" href="#">Gambaran Umum Organisasi</a></li>
+              <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
+              <li><a class="dropdown-item" href="#">Struktur Pejabat</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Layanan
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">SePTSP (Pelayanan Terpadu Satu Pintu)</a></li>
+              <li><a class="dropdown-item" href="#"> Izin Operasional Madrasah</a></li>
+              <li><a class="dropdown-item" href="#">Pendaftaran Haji</a></li>
+              <li><a class="dropdown-item" href="#">Izin Oprasional Pondok Pesantren</a></li>
+              <li><a class="dropdown-item" href="#">Kepegawaian</a></li>
+              <li><a class="dropdown-item" href="#">Kehumasan</a></li>
+              <li><a class="dropdown-item" href="#">Pembuatan Akta Wakaf</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Unit Kerja
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Sekretariat Jenderal</a></li>
+              <li><a class="dropdown-item" href="#"> Pendidikan Madrasah</a></li>
+              <li><a class="dropdown-item" href="#">Bimbingan Masyarakat Islam</a></li>
+              <li><a class="dropdown-item" href="#">Penyelenggara Haji Dan Umroh</a></li>
+              <li><a class="dropdown-item" href="#">Pendidikan Diniyah Dan Pondok Pesantren</a></li>
+              <li><a class="dropdown-item" href="#">Pendidikan Agama Islam</a></li>
+              <li><a class="dropdown-item" href="#">Penyelenggara Zakat Dan Wakaf</a></li>
+            </ul>
+          </li> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Berita
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Berita Terkini</a></li>
+              <li><a class="dropdown-item" href="#"> Berita Nasional</a></li>
+              <li><a class="dropdown-item" href="#">Berita Daerah</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hubungi Kami
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Hotline Number</a></li>
+              <li><a class="dropdown-item" href="#"> Email</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <span class="navbar-clock" id="clock"></span>
+        <span class="navbar-text" id="currentDate"></span>
+
+        <button class="btn btn-outline-primary" type="submit" formaction="#">Login</button>
+      </div>
+    </div>
+  </nav>
+
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" style="text-decoration: none; color: black;">Beranda</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Sekretariat Jendral</li>
+            </ol>
+        </nav>
+        <h1 class="title"><span><b>TATA USAHA KANWIL KEMENAG PROVINSI BANTEN</b></span></h1>
+        <div class="content">
+        <p>Bagian Tata Usaha bertugas melaksanakan koordinasi penyusunan kebijakan teknis, pelaksanaan tugas, pelayanan, pemberian dukungan, dan bina administrasi pada kantor wilayah Kementerian Agama provinsi berdasarkan kebijakan teknis yang ditetapkan oleh Kepala Kantor Wilayah Kementerian Agama provinsi. Fungsi Bagian Tata Usaha Antara Lain :</p>
+
+    <div class="content">
+      <ol>
+          <li> 1. Koordinasi penyusunan rencana, program, perjanjian kinerja, kegiatan dan anggaran, evaluasi, serta Laporan;</li>
+          <br><li> 2. Pelaksanaan urusan keuangan dan perbendaharaan, verifikasi akuntansi instansi, dan sistem informasi manajemen dan akuntansi barang milik negara, serta pelaporan keuangan dan barang milik negara;</li>
+          <br><li> 3. Penyusunan rencana kebutuhan dan penataan pegawai, pengelolaan data dan administrasi Kepegawaian, fasilitasi asesmen, dan pengembangan pegawai;</li>
+          <br><li> 4. Penyusunan analisis organisasi, analisis jabatan dan beban kerja, sistem, standar, dan prosedur kerja, laporan kinerja, tindak lanjut hasil pengawasan, pelaksanaan pelayanan publik, fasilitasi pelaksanaan reformasi birokrasi, dan zona integritas;</li>
+          <br><li> 5. Penyusunan keputusan dan instrumen hukum lainnya, analisis, advokasi, dan penyuluhan hukum, serta kerja sama dan pengawasan orang asing;</li>
+          <br><li> 6. Pelaksanaan bina lembaga kerukunan umat beragama dan lembaga keagamaan, dan harmonisasi umat beragama;</li>
+          <br><li> 7. Pengelolaan data, pengembangan sistem informasi, hubungan masyarakat, dan publikasi; dan</li>
+          <br><li> 8. Pelaksanaan urusan ketatausahaan, kerumahtanggaan, perlengkapan, pengadaan, dan pemeliharaan barang milik negara, serta fasilitasi pelayanan terpadu pada kantor wilayah kementerian agama provinsi.</li>
+        </ol>
+  </div>
+
+      <h1 class="title"><span><b>Susunan organisasi Bagian Tata Usaha, terdiri atas: :</b></span></h1>
+    <div class="content">
+        <ol>
+            <li> 1. Subbagian perencanaan, data, dan informasi;</li>
+            <br><li>2. Subbagian keuangan dan barang milik negara;</li>
+            <br><li>3. Subbagian kepegawaian dan hukum;</li>
+            <br><li>4. Subbagian organisasi, tata laksana, dan kerukunan umat beragama;</li>
+            <br><li>5. Subbagian umum dan hubungan masyarakat; dan</li>
+            <br><li>6. Kelompok jabatan fungsional.</li>
+        </ol>
+    </div>
+
+    <h1 class="title"><span><b>Uraian Tugas dan fungsi masing masing sub Bagian</b></span></h1>
+    <div class="content">
+        <ol>
+            <li> 1. Subbagian Perencanaan, Data, dan Informasi sebagaimana dimaksud dalam Pasal 174 huruf a bertugas melakukan penyiapan bahan koordinasi penyusunan rencana program kegiatan dan anggaran, rencana dan perjanjian kinerja, evaluasi, dan pelaporan, serta pengelolaan data, dan pengembangan sistem informasi.</li>
+            <br><li> 2. Subbagian Keuangan dan Barang Milik Negara sebagaimana dimaksud dalam Pasal 174 huruf b bertugas melakukan urusan keuangan dan perbendaharaan, verifikasi akuntansi instansi, dan sistem informasi manajemen dan akuntansi barang milik negara, serta pelaporan keuangan dan barang milik negara.</li>
+            <br><li> 3. Subbagian Kepegawaian dan Hukum sebagaimana imaksud dalam Pasal 174 huruf c bertugas melakukan penyusunan rencana kebutuhan dan penataan pegawai, pengelolaan data dan administrasi  kepegawaian, fasilitasi asesmen dan pengembangan pegawai, penyusunan keputusan dan instrument hukum lainnya, advokasi dan penyuluhan hukum, serta kerja sama dan koordinasi pengawasan orang asing.</li>
+            <br><li> 4. Subbagian Organisasi, Tata Laksana, dan Kerukunan Umat Beragama sebagaimana dimaksud dalam Pasal 174 huruf d bertugas melakukan penyiapan bahan koordinasi penyusunan analisis organisasi, analisis jabatan dan beban kerja, sistem, standar dan prosedur kerja, laporan kinerja, tindak lanjut hasil pengawasan, evaluasi pelayanan publik, fasilitasi pelaksanaan reformasi birokrasi dan zona integritas, bina Lembaga kerukunan umat beragama dan lembaga keagamaan, serta harmonisasi umat beragama.</li>
+            <br><li> 5. Subbagian Umum dan Hubungan Masyarakat sebagaimana dimaksud dalam Pasal 174 huruf e bertugas melakukan urusan ketatausahaan, kerumahtanggaan, perlengkapan, pengadaan, dan pemeliharaan barang milik negara, dan fasilitasi pelayanan terpadu, serta hubungan masyarakat dan publikasi.</li>
+        </ol>
+    </div>
+    </div>
+    </div>
+
+            <!--footer-->  
+            <footer class="text-white py-4" >
+              <div class="container footer">
+                <div class="row footer">
+                  <!-- Tentang -->
+                  <div class="col-md-4 kanan">
+                  <h5><strong>Tentang</strong></h5>
+                    <p>Ini adalah website resmi Kementerian Agama Kabupaten Lebak.</p>
+                    <p> <br>
+                      <strong>Alamat:</strong><br>
+                      <a href="https://maps.app.goo.gl/vrRSJaD3EnE3NWbdA" target="_blank">Jl. Siliwangi No.2, Muara Ciujung Tim., Kec. Rangkasbitung, Kabupaten Lebak, Banten 42314</a>
+                    </p>
+                </div>
+                  <!-- Email -->
+                  <div class="col-md-4 tengah">
+                    <h5><strong>Email</strong></h5>
+                    <ul class="list-unstyled" >
+                      <li><a href="mailto:Sekjen_416610@kemenag.go.id" class="text-white"><h2 class="text-white">Sekjen_416610@kemenag.go.id</h2></a></li>
+                      <li><a href="mailto:Pendis_416612@kemenag.go.id" class="text-white">Pendis_416612@kemenag.go.id</a></li>
+                      <li><a href="mailto:Bimas_416611@kemenag.go.id" class="text-white">Bimas_416611@kemenag.go.id</a></li>
+                      <li><a href="mailto:PHU_416613@kemenag.go.id" class="text-white">PHU_416613@kemenag.go.id</a></li>
+                    </ul>
+                  </div>
+            
+                  <!-- Sosial Media -->
+                  <div class="col-md-4 kiri" style="padding-top: 20px;">
+                    <h5 class="sosmed"><strong>Sosial Media</strong></h5>
+                    <a href="https://web.facebook.com/Benikemenaglebak" target="_blank" class="text-white me-2">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kemenag_lebak?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white me-2">
+                      <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@humaskemenaglebak4842" target="_blank" class="text-white me-2">
+                      <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                </div>
+                </div>
+                <div class="text-center mt-4">
+                  <p>© 2024 Kementerian Agama Lebak</p>
+                </div>
+              </div>
+            </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

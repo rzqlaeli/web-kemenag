@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+      <title>Kemenag Lebak</title>
+</head>
+<header>
+    <img src="img/header.png" class="img-fluid" alt="header" style="width: 100%; height: auto;">
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1E2A5E;">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Profil
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+              <li><a class="dropdown-item" href="visi-misi.html">Visi dan Misi</a></li>
+              <li><a class="dropdown-item" href="tugas-fungsi.html">Tugas dan Fungsi</a></li>
+              <li><a class="dropdown-item" href="tujuan.html">Tujuan</a></li>
+              <li><a class="dropdown-item" href="#">Gambaran Umum Organisasi</a></li>
+              <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
+              <li><a class="dropdown-item" href="#">Struktur Pejabat</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Layanan
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">SePTSP (Pelayanan Terpadu Satu Pintu)</a></li>
+              <li><a class="dropdown-item" href="#"> Izin Operasional Madrasah</a></li>
+              <li><a class="dropdown-item" href="#">Pendaftaran Haji</a></li>
+              <li><a class="dropdown-item" href="#">Izin Oprasional Pondok Pesantren</a></li>
+              <li><a class="dropdown-item" href="#">Kepegawaian</a></li>
+              <li><a class="dropdown-item" href="#">Kehumasan</a></li>
+              <li><a class="dropdown-item" href="#">Pembuatan Akta Wakaf</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Unit Kerja
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="sekjen.html">Sekretariat Jenderal</a></li>
+              <li><a class="dropdown-item" href="penma.html"> Pendidikan Madrasah</a></li>
+              <li><a class="dropdown-item" href="#">Bimbingan Masyarakat Islam</a></li>
+              <li><a class="dropdown-item" href="#">Penyelenggara Haji Dan Umroh</a></li>
+              <li><a class="dropdown-item" href="#">Pendidikan Diniyah Dan Pondok Pesantren</a></li>
+              <li><a class="dropdown-item" href="#">Pendidikan Agama Islam</a></li>
+              <li><a class="dropdown-item" href="#">Penyelenggara Zakat Dan Wakaf</a></li>
+            </ul>
+          </li> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Berita
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Berita Terkini</a></li>
+              <li><a class="dropdown-item" href="#"> Berita Nasional</a></li>
+              <li><a class="dropdown-item" href="#">Berita Daerah</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hubungi Kami
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Hotline Number</a></li>
+              <li><a class="dropdown-item" href="#"> Email</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <span class="navbar-clock" id="clock"></span>
+        <span class="navbar-text" id="currentDate"></span>
+
+        <button class="btn btn-outline-primary" type="submit" formaction="#">Login</button>
+      </div>
+    </div>
+  </nav>
+<body>
+    <div class="container my-5">
+        <div class="row atas">
+          <!-- Berita Utama -->
+          <div class="col-md-8">
+            <h1 class="heading">BERITA UTAMA</h1>
+            <!--indikator slide-->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner berita-utama">
+                <div class="carousel-item active berita-utama " dt-bs-interval="500">
+                  <div class="row">
+                    <div class="col-12 berita-utama">
+                      <img src="img/img-berita/head-sidak.jpg" class="img-fluid rounded-start" alt="sidak">
+                    </div>
+                    <div class="col-12">
+                      <div class="card-body">
+                        <h5 class="card-title">Lebak (Kemenag)</h5>
+                        <a href="berita-sidak.html" class="text-decoration-none" ><h2 class="card-text">Kasubbag Tata Usaha Sidak KUA Cipanas, Sajira, Lebakgedong : Tingkatkan Disiplin dan Pelayanan </h2></a>
+                        <p class="card-text"><small class="text-muted">Kamis, 26 September 2024</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item berita-utama" dt-bs-interval="500">
+                  <div class="row">
+                    <div class="col-12 berita-utama" >
+                      <img src="img/img-berita/head-manasik.jpg" class="img-fluid rounded-start" alt="..." >
+                    </div>
+                    <div class="col-12">
+                      <div class="card-body">
+                        <h5 class="card-title">Jakarta (Kemenag)</h5>
+                        <a href="berita-manasik.html" class="text-decoration-none" ><h2 class="card-text">Perkenalkan Ibadah Haji Sejak Dini, PD IGRA Kabupaten Lebak Gelar Manasik Haji</h2></a>
+                        <p class="card-text"><small class="text-muted">Kamis, 26 September 2024</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item berita-utama" dt-bs-interval="500">
+                  <div class="row">
+                    <div class="col-12 berita-utama" >
+                      <img src="img/img-berita/head-senam.jpg" class="img-fluid rounded-start" alt="..." >
+                    </div>
+                    <div class="col-12">
+                      <div class="card-body">
+                        <h5 class="card-title">Jakarta (Kemenag)</h5>
+                        <a href="berita-senam.html" class="text-decoration-none" ><h2 class="card-text">Kemenag Lebak Gelar Senam Sehat Jum'at Pagi</h2></a>
+                        <p class="card-text"><small class="text-muted">Jum'at, 27 September 2024</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item berita-utama" dt-bs-interval="500">
+                  <div class="row">
+                    <div class="col-12 berita-utama" >
+                      <img src="img/gambar_c.jpeg" class="img-fluid rounded-start" alt="..." >
+                    </div>
+                    <div class="col-12">
+                      <div class="card-body">
+                        <h5 class="card-title">Jakarta (Kemenag)</h5>
+                        <a href="https://kemenag.go.id/nasional/dibuka-beasiswa-non-degree-bagi-santri-kesempatan-kuliah-di-berbagai-benua-gGE6a" target="_blank" class="text-decoration-none" ><h2 class="card-text">Dibuka Beasiswa Non-Degree bagi Santri, Kesempatan Kuliah di Berbagai Benua </h2></a>
+                        <p class="card-text"><small class="text-muted">Rabu, 04 September 2024</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!--indikator slide kanan kiri-->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+                
+          <div class="col-md-4" >
+            <h1 class="heading">INFO KEMENAG RI</h1>
+
+          <div class="sidebar">        
+          <div class="row sidebar" >
+            <div class="col-md-4 sidebar">
+              <img src="https://cdn.kemenag.go.id/storage/posts/16_9/big/1727254021.jpg" class="img-fluid rounded-start" alt="..." >
+            </div>
+            <div class="col-dm-8">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Jakarta (Kemenag)</h5>
+                <a href="https://kemenag.go.id/nasional/kemenag-dorong-bpkh-jadi-penopang-global-halal-hub-di-indonesia-7Cpz1" target="_blank" class="text-decoration-none" ><h2 class="card-text">Kemenag Dorong BPKH Jadi Penopang Global Halal Hub di Indonesia</h2></a>
+                <p class="card-text"><small class="text-muted">Rabu, 25 September 2024</small></p>
+              </div>
+            </div>
+          </div> 
+        
+          <div class="row sidebar" >
+            <div class="col-md-4 sidebar">
+              <img src="https://cdn.kemenag.go.id/storage/posts/16_9/big/1727234937.jpg" class="img-fluid rounded-start" alt="..." >
+            </div>
+            <div class="col-dm-8">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Jakarta (Kemenag)</h5>
+                <a href="https://kemenag.go.id/nasional/kemenag-dan-kemendikbud-akan-sederhanakan-perizinan-paud-dan-ra-8glNF" target="_blank" class="text-decoration-none" ><h2 class="card-text">Kemenag dan Kemendikbud akan Sederhanakan Perizinan PAUD dan RA</h2></a>
+                <p class="card-text"><small class="text-muted">Rabu, 04 September 2024</small></p>
+              </div>
+            </div>
+          </div>  
+        
+          <div class="row sidebar" >
+            <div class="col-md-4 sidebar">
+              <img src="img/gambar_f.jpeg" class="img-fluid rounded-start" alt="..." >
+            </div>
+            <div class="col-dm-8">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Jakarta (Kemenag)</h5>
+                <a href="https://kemenag.go.id/nasional/dibuka-beasiswa-non-degree-bagi-santri-kesempatan-kuliah-di-berbagai-benua-gGE6a" target="_blank" class="text-decoration-none" ><h2 class="card-text">Dibuka Beasiswa Non-Degree bagi Santri, Kesempatan Kuliah di Berbagai Benua </h2></a>
+                <p class="card-text"><small class="text-muted">Rabu, 04 September 2024</small></p>
+              </div>
+            </div>
+          </div> 
+        
+          <div class="row sidebar" >
+            <div class="col-md-4 sidebar">
+              <img src="img/gambar_2.jpeg" class="img-fluid rounded-start" alt="..." >
+            </div>
+            <div class="col-dm-8">
+              <div class="card-body">
+                <h5 class="card-title" style="font-weight: bold;">Jakarta (Kemenag)</h5>
+                <a href="https://kemenag.go.id/nasional/dibuka-beasiswa-non-degree-bagi-santri-kesempatan-kuliah-di-berbagai-benua-gGE6a" target="_blank" class="text-decoration-none" ><h2 class="card-text">Dibuka Beasiswa Non-Degree bagi Santri, Kesempatan Kuliah di Berbagai Benua </h2></a>
+                <p class="card-text"><small class="text-muted">Rabu, 04 September 2024</small></p>
+              </div>
+            </div>
+          </div>  
+        
+          </div>
+  </div>
+  </div>
+
+<!--Galeri Utama-->
+<div class="container mt-5 galeri-utama">
+  <h1 class="heading">GALERI UTAMA</h1>
+
+  <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner galeri-utama">
+          <!-- Slide 1 masukan empat gambar ke dalam setiap slide dengan ukuran atau foto asli tanpa editan-->
+          <div class="carousel-item active galeri-utama">
+              <div class="row galeri-utama justify-content-center g-2">
+                  <div class="col-md-3 galeri-utama d-flex justify-content-center">
+                      <div class="card galeri-utama">
+                          <img src="img/gambar_1.jpeg" class="card-img-top" alt="Gambar 1">
+                          <div class="card-body galeri-utama">
+                              <h5 class="card-title galeri-utama">
+                                  <a href="https://www.bing.com/ck/a?!&&p=10d1f7585cfb41e9JmltdHM9MTcyNjg3NjgwMCZpZ3VpZD0zOTJlZjk4Mi02ZjM5LTZiMDUtM2ZlZi1lZDdkNmU2ZjZhMjkmaW5zaWQ9NTIxNQ&ptn=3&ver=2&hsh=3&fclid=392ef982-6f39-6b05-3fef-ed7d6e6f6a29&psq=berita+kemenag+lebak&u=a1aHR0cHM6Ly9iYW50ZW4uYW50YXJhbmV3cy5jb20vYmVyaXRhLzI5ODIwNy9kZW1pLXByZXN0YXNpLWtlbWVuYWctbGViYWstbWludGEtZ3VydS1kYW4tc2lzd2EtYmVsYWphci1tYW5kaXJp&ntb=1" title="Lihat lebih lanjut tentang Judul 1">Kegiatan Pertama</a>
+                              </h5>
+                              <a href="#" class="toggle-caption" onclick="event.preventDefault(); toggleContent(this)">Lihat Selengkapnya</a>
+                              <div class="additionalContent" style="display:none;">
+                                <p class="caption">ini merupakan kegiatan pertama yang di buat dan di susun oleh kementrian agama lebak</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 galeri-utama d-flex justify-content-center">
+                      <div class="card galeri-utama">
+                          <img src="img/gambar_e.jpeg" class="card-img-top" alt="Gambar 1">
+                          <div class="card-body galeri-utama">
+                              <h5 class="card-title galeri-utama">
+                                  <a href="https://www.bing.com/ck/a?!&&p=10d1f7585cfb41e9JmltdHM9MTcyNjg3NjgwMCZpZ3VpZD0zOTJlZjk4Mi02ZjM5LTZiMDUtM2ZlZi1lZDdkNmU2ZjZhMjkmaW5zaWQ9NTIxNQ&ptn=3&ver=2&hsh=3&fclid=392ef982-6f39-6b05-3fef-ed7d6e6f6a29&psq=berita+kemenag+lebak&u=a1aHR0cHM6Ly9iYW50ZW4uYW50YXJhbmV3cy5jb20vYmVyaXRhLzI5ODIwNy9kZW1pLXByZXN0YXNpLWtlbWVuYWctbGViYWstbWludGEtZ3VydS1kYW4tc2lzd2EtYmVsYWphci1tYW5kaXJp&ntb=1" title="Lihat lebih lanjut tentang Judul 1">Kegiatan Kedua</a>
+                              </h5>
+                              <a href="#" class="toggle-caption" onclick="event.preventDefault(); toggleContent(this)">Lihat Selengkapnya</a>
+                              <div class="additionalContent" style="display:none;">
+                                <p class="caption">ini merupakan kegiatan kedua yang di buat dan di susun oleh kementrian agama lebak</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 galeri-utama d-flex justify-content-center">
+                      <div class="card galeri-utama">
+                          <img src="img/gambar_g.jpeg" class="card-img-top" alt="Gambar 1">
+                          <div class="card-body galeri-utama">
+                              <h5 class="card-title galeri-utama">
+                                  <a href="https://www.bing.com/ck/a?!&&p=10d1f7585cfb41e9JmltdHM9MTcyNjg3NjgwMCZpZ3VpZD0zOTJlZjk4Mi02ZjM5LTZiMDUtM2ZlZi1lZDdkNmU2ZjZhMjkmaW5zaWQ9NTIxNQ&ptn=3&ver=2&hsh=3&fclid=392ef982-6f39-6b05-3fef-ed7d6e6f6a29&psq=berita+kemenag+lebak&u=a1aHR0cHM6Ly9iYW50ZW4uYW50YXJhbmV3cy5jb20vYmVyaXRhLzI5ODIwNy9kZW1pLXByZXN0YXNpLWtlbWVuYWctbGViYWstbWludGEtZ3VydS1kYW4tc2lzd2EtYmVsYWphci1tYW5kaXJp&ntb=1" title="Lihat lebih lanjut tentang Judul 1">Kegiatan Ketiga</a>
+                              </h5>
+                              <a href="#" class="toggle-caption" onclick="event.preventDefault(); toggleContent(this)">Lihat Selengkapnya</a>
+                              <div class="additionalContent" style="display:none;">
+                                <p class="caption">ini merupakan kegiatan ketiga yang di buat dan di susun oleh kementrian agama lebak</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 galeri-utama d-flex justify-content-center">
+                      <div class="card galeri-utama">
+                          <img src="img/gambar_4.jpeg" class="card-img-top" alt="Gambar 1">
+                          <div class="card-body galeri-utama">
+                              <h5 class="card-title galeri-utama">
+                                  <a href="https://www.bing.com/ck/a?!&&p=10d1f7585cfb41e9JmltdHM9MTcyNjg3NjgwMCZpZ3VpZD0zOTJlZjk4Mi02ZjM5LTZiMDUtM2ZlZi1lZDdkNmU2ZjZhMjkmaW5zaWQ9NTIxNQ&ptn=3&ver=2&hsh=3&fclid=392ef982-6f39-6b05-3fef-ed7d6e6f6a29&psq=berita+kemenag+lebak&u=a1aHR0cHM6Ly9iYW50ZW4uYW50YXJhbmV3cy5jb20vYmVyaXRhLzI5ODIwNy9kZW1pLXByZXN0YXNpLWtlbWVuYWctbGViYWstbWludGEtZ3VydS1kYW4tc2lzd2EtYmVsYWphci1tYW5kaXJp&ntb=1" title="Lihat lebih lanjut tentang Judul 1">Kegiatan Keempat</a>
+                              </h5>
+                              <a href="#" class="toggle-caption" onclick="event.preventDefault(); toggleContent(this)">Lihat Selengkapnya</a>
+                              <div class="additionalContent" style="display:none;">
+                                <p class="caption">ini merupakan kegiatan keempat yang di buat dan di susun oleh kementrian agama lebak</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Slide 2 masukan 4 gambar ke dalam setiap slide dengan ukuran atau foto asli tanpa editan-->
+          <div class="carousel-item galeri-utama">
+              <div class="row galeri-utama justify-content-center g-2">
+                <div class="col-md-3 galeri-utama d-flex justify-content-center">
+                  <div class="card galeri-utama">
+                      <img src="img/gambar_f.jpeg" class="card-img-top" alt="Gambar 1">
+                      <div class="card-body galeri-utama">
+                          <h5 class="card-title galeri-utama">
+                              <a href="https://www.bing.com/ck/a?!&&p=10d1f7585cfb41e9JmltdHM9MTcyNjg3NjgwMCZpZ3VpZD0zOTJlZjk4Mi02ZjM5LTZiMDUtM2ZlZi1lZDdkNmU2ZjZhMjkmaW5zaWQ9NTIxNQ&ptn=3&ver=2&hsh=3&fclid=392ef982-6f39-6b05-3fef-ed7d6e6f6a29&psq=berita+kemenag+lebak&u=a1aHR0cHM6Ly9iYW50ZW4uYW50YXJhbmV3cy5jb20vYmVyaXRhLzI5ODIwNy9kZW1pLXByZXN0YXNpLWtlbWVuYWctbGViYWstbWludGEtZ3VydS1kYW4tc2lzd2EtYmVsYWphci1tYW5kaXJp&ntb=1" title="Lihat lebih lanjut tentang Judul 1">Kegiatan Kelima</a>
+                          </h5>
+                          <a href="#" class="toggle-caption" onclick="event.preventDefault(); toggleContent(this)">Lihat Selengkapnya</a>
+                          <div class="additionalContent" style="display:none;">
+                            <p class="caption">ini merupakan kegiatan kelima yang di buat dan di susun oleh kementrian agama lebak</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                  <div class="col-md-3 galeri-utama d-flex justify-content-center">
+                      <div class="card galeri-utama">
+                          <img src="img/gambar_b.jpeg" class="card-img-top" alt="Gambar 1">
+                          <div class="card-body galeri-utama">
+                              <h5 class="card-title galeri-utama">
+                                  <a href="https://www.bing.com/ck/a?!&&p=10d1f7585cfb41e9JmltdHM9MTcyNjg3NjgwMCZpZ3VpZD0zOTJlZjk4Mi02ZjM5LTZiMDUtM2ZlZi1lZDdkNmU2ZjZhMjkmaW5zaWQ9NTIxNQ&ptn=3&ver=2&hsh=3&fclid=392ef982-6f39-6b05-3fef-ed7d6e6f6a29&psq=berita+kemenag+lebak&u=a1aHR0cHM6Ly9iYW50ZW4uYW50YXJhbmV3cy5jb20vYmVyaXRhLzI5ODIwNy9kZW1pLXByZXN0YXNpLWtlbWVuYWctbGViYWstbWludGEtZ3VydS1kYW4tc2lzd2EtYmVsYWphci1tYW5kaXJp&ntb=1" title="Lihat lebih lanjut tentang Judul 1">Kegiatan Keenam</a>
+                              </h5>
+                              <a href="#" class="toggle-caption" onclick="event.preventDefault(); toggleContent(this)">Lihat Selengkapnya</a>
+                              <div class="additionalContent" style="display:none;">
+                                <p class="caption">ini adalah kegiatan ke enam yang di buat dan disusun oleh kementrian agama lebak</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 galeri-utama d-flex justify-content-center">
+                      <div class="card galeri-utama">
+                          <img src="img/gambar_2.jpeg" class="card-img-top" alt="Gambar 1">
+                          <div class="card-body galeri-utama">
+                              <h5 class="card-title galeri-utama">
+                                  <a href="https://www.bing.com/ck/a?!&&p=10d1f7585cfb41e9JmltdHM9MTcyNjg3NjgwMCZpZ3VpZD0zOTJlZjk4Mi02ZjM5LTZiMDUtM2ZlZi1lZDdkNmU2ZjZhMjkmaW5zaWQ9NTIxNQ&ptn=3&ver=2&hsh=3&fclid=392ef982-6f39-6b05-3fef-ed7d6e6f6a29&psq=berita+kemenag+lebak&u=a1aHR0cHM6Ly9iYW50ZW4uYW50YXJhbmV3cy5jb20vYmVyaXRhLzI5ODIwNy9kZW1pLXByZXN0YXNpLWtlbWVuYWctbGViYWstbWludGEtZ3VydS1kYW4tc2lzd2EtYmVsYWphci1tYW5kaXJp&ntb=1" title="Lihat lebih lanjut tentang Judul 1">Kegiatan Ketujuh</a>
+                              </h5>
+                              <a href="#" class="toggle-caption" onclick="event.preventDefault(); toggleContent(this)">Lihat Selengkapnya</a>
+                              <div class="additionalContent" style="display:none;">
+                                <p class="caption">ini adalah kegiatan ke ketujih yang di buat dan disusun oleh kementrian agama lebak</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3 galeri-utama d-flex justify-content-center">
+                      <div class="card galeri-utama">
+                          <img src="img/gambar_h.jpeg" class="card-img-top" alt="Gambar 8">
+                          <div class="card-body galeri-utama">
+                              <h5 class="card-title galeri-utama">
+                                  <a href="https://www.bing.com/ck/a?!&&p=10d1f7585cfb41e9JmltdHM9MTcyNjg3NjgwMCZpZ3VpZD0zOTJlZjk4Mi02ZjM5LTZiMDUtM2ZlZi1lZDdkNmU2ZjZhMjkmaW5zaWQ9NTIxNQ&ptn=3&ver=2&hsh=3&fclid=392ef982-6f39-6b05-3fef-ed7d6e6f6a29&psq=berita+kemenag+lebak&u=a1aHR0cHM6Ly9iYW50ZW4uYW50YXJhbmV3cy5jb20vYmVyaXRhLzI5ODIwNy9kZW1pLXByZXN0YXNpLWtlbWVuYWctbGViYWstbWludGEtZ3VydS1kYW4tc2lzd2EtYmVsYWphci1tYW5kaXJp&ntb=1" title="Lihat lebih lanjut tentang Judul 1">Kegiatan Kedelapan</a>
+                              </h5>
+                              <a href="#" class="toggle-caption" onclick="event.preventDefault(); toggleContent(this)">Lihat Selengkapnya</a>
+                              <div class="additionalContent" style="display:none;">
+                                <p class="caption">ini adalah kegiatan ke ke delapan yang di buat dan disusun oleh kementrian agama lebak</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Controls untuk mengatur tombol lanjut dan kembali -->
+      <button class="carousel-control-prev galeri-utama" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon galeri-utama" aria-hidden="true"></span>
+          <span class="visually-hidden galeri-utama">Previous</span>
+      </button>
+      <button class="carousel-control-next galeri-utama" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon galeri-utama" aria-hidden="true"></span>
+          <span class="visually-hidden  galeri-utama">Next</span>
+      </button>
+  </div>
+</div>
+
+                <!-- Berita Madrasah -->
+  <div class="container mt-5 berita-madrasah">
+    <h1 class="heading">KABAR MADRASAH</h1>
+    <div class="berita-madrasah">
+
+      <!--artikel di dalam berita madrasah-->
+        <div class="row article-row">
+          <div class="col-md-6">
+            <div class="d-flex">
+              <img src="img/gambar_d.jpeg" class="img-fluid me-3" alt="Article Image">
+            <div>
+            <span class="category-label">Nasional</span>
+            <a href="https://kemenag.go.id/nasional/dibuka-beasiswa-non-degree-bagi-santri-kesempatan-kuliah-di-berbagai-benua-gGE6a" target="_blank"><h3 class="article-title"> Ungguli Sekolah di Indonesia, MAN 2 Kota Malang Raih Medali Terbanyak OSN 2024</h3></a>
+            <p class="card-text"><small class="text-muted">Rabu, 04 September 2024</small></p>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex">
+              <img src="img/gambar_g.jpeg" class="img-fluid me-3" alt="Article Image">
+            <div>
+            <span class="category-label">Nasional</span>
+            <a href="https://kemenag.go.id/nasional/dibuka-beasiswa-non-degree-bagi-santri-kesempatan-kuliah-di-berbagai-benua-gGE6a" target="_blank"><h3 class="article-title"> Ungguli Sekolah di Indonesia, MAN 2 Kota Malang Raih Medali Terbanyak OSN 2024</h3></a>
+            <p class="card-text"><small class="text-muted">Rabu, 04 September 2024</small></p>
+            </div>
+            </div>
+          </div>
+        </div>
+                
+        <div class="row article-row">
+          <div class="col-md-6">
+            <div class="d-flex">
+              <img src="img/gambar_f.jpeg" class="img-fluid me-3" alt="Article Image">
+            <div>
+            <span class="category-label">Nasional</span>
+            <a href="https://kemenag.go.id/nasional/dibuka-beasiswa-non-degree-bagi-santri-kesempatan-kuliah-di-berbagai-benua-gGE6a" target="_blank"><h3 class="article-title"> Ungguli Sekolah di Indonesia, MAN 2 Kota Malang Raih Medali Terbanyak OSN 2024</h3></a>
+            <p class="card-text"><small class="text-muted">Rabu, 04 September 2024</small></p>  
+          </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex">
+              <img src="img/gambar_4.jpeg" class="img-fluid me-3" alt="Article Image">
+            <div>
+            <span class="category-label">Nasional</span>
+            <a href="https://kemenag.go.id/nasional/dibuka-beasiswa-non-degree-bagi-santri-kesempatan-kuliah-di-berbagai-benua-gGE6a" target="_blank"><h3 class="article-title"> Ungguli Sekolah di Indonesia, MAN 2 Kota Malang Raih Medali Terbanyak OSN 2024</h3></a>
+            <p class="card-text"><small class="text-muted">Rabu, 04 September 2024</small></p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+            <!--footer-->  
+            <footer class="text-white py-4" >
+              <div class="container footer">
+                <div class="row footer">
+                  <!-- Tentang -->
+                  <div class="col-md-4 kanan">
+                  <h5><strong>Tentang</strong></h5>
+                    <p>Ini adalah website resmi Kementerian Agama Kabupaten Lebak.</p>
+                    <p> <br>
+                      <strong>Alamat:</strong><br>
+                      <a href="https://maps.app.goo.gl/vrRSJaD3EnE3NWbdA" target="_blank">Jl. Siliwangi No.2, Muara Ciujung Tim., Kec. Rangkasbitung, Kabupaten Lebak, Banten 42314</a>
+                    </p>
+                </div>
+                  <!-- Email -->
+                  <div class="col-md-4 tengah">
+                    <h5><strong>Email</strong></h5>
+                    <ul class="list-unstyled" >
+                      <li><a href="mailto:Sekjen_416610@kemenag.go.id" class="text-white"><h2 class="text-white">Sekjen_416610@kemenag.go.id</h2></a></li>
+                      <li><a href="mailto:Pendis_416612@kemenag.go.id" class="text-white">Pendis_416612@kemenag.go.id</a></li>
+                      <li><a href="mailto:Bimas_416611@kemenag.go.id" class="text-white">Bimas_416611@kemenag.go.id</a></li>
+                      <li><a href="mailto:PHU_416613@kemenag.go.id" class="text-white">PHU_416613@kemenag.go.id</a></li>
+                    </ul>
+                  </div>
+            
+                  <!-- Sosial Media -->
+                  <div class="col-md-4 kiri" style="padding-top: 20px;">
+                    <h5 class="sosmed"><strong>Sosial Media</strong></h5>
+                    <a href="https://web.facebook.com/Benikemenaglebak" target="_blank" class="text-white me-2">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kemenag_lebak?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white me-2">
+                      <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@humaskemenaglebak4842" target="_blank" class="text-white me-2">
+                      <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                </div>
+                </div>
+                <div class="text-center mt-4">
+                  <p>© 2024 Kementerian Agama Lebak</p>
+                </div>
+              </div>
+            </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

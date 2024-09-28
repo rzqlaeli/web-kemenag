@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/penma.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+      <title>Kemenag Lebak</title>
+</head>
+
+<header>
+  <img src="img/header1.png" class="img-fluid" alt="header" style="width: 100%; height: auto;">
+</header>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1E2A5E;">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Profil
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li>
+              <li><a class="dropdown-item" href="visi-misi.html">Visi dan Misi</a></li>
+              <li><a class="dropdown-item" href="tugas-fungsi.html">Tugas dan Fungsi</a></li>
+              <li><a class="dropdown-item" href="tujuan.html">Tujuan</a></li>
+              <li><a class="dropdown-item" href="#">Gambaran Umum Organisasi</a></li>
+              <li><a class="dropdown-item" href="#">Struktur Organisasi</a></li>
+              <li><a class="dropdown-item" href="#">Struktur Pejabat</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Layanan
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">SePTSP (Pelayanan Terpadu Satu Pintu)</a></li>
+              <li><a class="dropdown-item" href="#"> Izin Operasional Madrasah</a></li>
+              <li><a class="dropdown-item" href="#">Pendaftaran Haji</a></li>
+              <li><a class="dropdown-item" href="#">Izin Oprasional Pondok Pesantren</a></li>
+              <li><a class="dropdown-item" href="#">Kepegawaian</a></li>
+              <li><a class="dropdown-item" href="#">Kehumasan</a></li>
+              <li><a class="dropdown-item" href="#">Pembuatan Akta Wakaf</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Unit Kerja
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Sekretariat Jenderal</a></li>
+              <li><a class="dropdown-item" href="#"> Pendidikan Madrasah</a></li>
+              <li><a class="dropdown-item" href="#">Bimbingan Masyarakat Islam</a></li>
+              <li><a class="dropdown-item" href="#">Penyelenggara Haji Dan Umroh</a></li>
+              <li><a class="dropdown-item" href="#">Pendidikan Diniyah Dan Pondok Pesantren</a></li>
+              <li><a class="dropdown-item" href="#">Pendidikan Agama Islam</a></li>
+              <li><a class="dropdown-item" href="#">Penyelenggara Zakat Dan Wakaf</a></li>
+            </ul>
+          </li> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Berita
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Berita Terkini</a></li>
+              <li><a class="dropdown-item" href="#"> Berita Nasional</a></li>
+              <li><a class="dropdown-item" href="#">Berita Daerah</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hubungi Kami
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Hotline Number</a></li>
+              <li><a class="dropdown-item" href="#"> Email</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <span class="navbar-clock" id="clock"></span>
+        <span class="navbar-text" id="currentDate"></span>
+
+        <button class="btn btn-outline-primary" type="submit" formaction="#">Login</button>
+      </div>
+    </div>
+  </nav>
+
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" style="text-decoration: none; color: black;">Beranda</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Pendidikan Madrasah</li>
+            </ol>
+        </nav>
+        <h1 class="title"><span><b>SEKSI PENDIDIKAN MADRASAH</b></span></h1>
+        <div class="content">
+        <p>Bidang Pendidikan Madrasah bertugas melaksanakan penyusunan bahan dan pelaksanan kebijakan teknis, pelayanan, bimbingan teknis, pembinaan, pengelolaan sistem informasi, dan penyusunan rencana, serta pelaporan di bidang kurikulum, sarana, kelembagaan, dan kesiswaan, serta guru dan tenaga kependidikan madrasah berdasarkan kebijakan teknis yang ditetapkan oleh Kepala Kantor Kementerian Agama Kabupaten.</p>
+    <p>Dalam melaksanakan tugas sebagaimana dimaksud, Seksi Pendidikan Madrasah menyelenggarakan fungsi:</p>
+
+    <div class="content">
+      <ol>
+          <li> 1. penyiapan bahan penyusunan dan pelaksanaan kebijakan teknis serta perencanaan di bidang kurikulum, sarana, kelembagaan, dan kesiswaan, serta guru dan tenaga kependidikan;</li>
+          <br><li> 2. pelayanan dan pemenuhan standar nasional pendidikan madrasah;</li>
+          <br><li> 3. bimbingan teknis dan supervisi di bidang kurikulum dan evaluasi, sarana prasarana, kelembagaan, pengembangan potensi siswa, guru dan tenaga kependidikan, kerja sama, dan pengelolaan sistem informasi pendidikan madrasah; dan</li>
+          <br><li> 4. evaluasi dan penyusunan laporan di bidang kurikulum, sarana, kelembagaan, dan kesiswaan, serta guru dan tenaga kependidikan.</li>
+      </ol>
+  </div>
+
+      <h1 class="title"><span><b>Uraian Tugas Seksi Pendidikan Madrasah Antara Lain :</b></span></h1>
+
+    <p>Kurikulum dan Kesiswaan sebagaimana dimaksud dalam Pasal 178 huruf a bertugas</p>
+    <p>melakukan penyiapan bahan kebijakan teknis di bidang pengembangan kurikulum, evaluasi, dan pengembangan potensi siswa pada raudlatul athfal dan madrasah, serta melakukan pelayanan, bimbingan teknis, dan supervisi pengembangan kurikulum, evaluasi, dan pengembangan potensi siswa madrasah aliyah dan madrasah aliyah kejuruan.</p>
+    <p>Sarana dan Prasarana sebagaimana dimaksud dalam Pasal 178 huruf b bertugas melakukan penyiapan bahan kebijakan teknis di bidang sarana dan prasarana pada raudlatul athfal dan madrasah serta melakukan pelayanan, bimbingan teknis, dan supervisi sarana dan prarsana pada madrasah Aliyah dan madrasah aliyah kejuruan.</p>
+    <p>Kelembagaan dan Sistem Informasi Madrasah sebagaimana dimaksud dalam Pasal 178 huruf c bertugas melakukan penyiapan bahan kebijakan teknis di bidang pengembangan kelembagaan, kerja sama, pengelolaan data, dan sistem informasi pendidikan pada raudlatul athfal dan madrasah, serta melakukan pelayanan, bimbingan teknis, dan supervisi pengembangan kerja sama, pengelolaan data, dan sistem informasi pendidikan pada madrasah aliyah dan madrasah aliyah kejuruan.</p>
+    <p>Guru sebagaimana dimaksud dalam Pasal 178 huruf d bertugas melakukan penyiapan bahan kebijakan teknis di bidang pengembangan guru pada raudlatul athfal dan madrasah, serta melakukan pelayanan, bimbingan teknis, dan supervise pengembangan guru pada madrasah aliyah dan madrasah aliyah kejuruan.</p>
+    <p>Tenaga Kependidikan sebagaimana dimaksud dalam Pasal 178 huruf e bertugas melakukan penyiapan bahan kebijakan teknis di bidang tenaga kependidikan pada raudlatul athfal dan madrasah, serta melakukan pelayanan, bimbingan teknis, dan supervisi tenaga kependidikan pada madrasah Aliyah dan madrasah aliyah kejuruan.</p>
+    </div>
+    </div>
+
+            <!--footer-->  
+            <footer class="text-white py-4" >
+              <div class="container footer">
+                <div class="row footer">
+                  <!-- Tentang -->
+                  <div class="col-md-4 kanan">
+                  <h5><strong>Tentang</strong></h5>
+                    <p>Ini adalah website resmi Kementerian Agama Kabupaten Lebak.</p>
+                    <p> <br>
+                      <strong>Alamat:</strong><br>
+                      <a href="https://maps.app.goo.gl/vrRSJaD3EnE3NWbdA" target="_blank">Jl. Siliwangi No.2, Muara Ciujung Tim., Kec. Rangkasbitung, Kabupaten Lebak, Banten 42314</a>
+                    </p>
+                </div>
+                  <!-- Email -->
+                  <div class="col-md-4 tengah">
+                    <h5><strong>Email</strong></h5>
+                    <ul class="list-unstyled" >
+                      <li><a href="mailto:Sekjen_416610@kemenag.go.id" class="text-white"><h2 class="text-white">Sekjen_416610@kemenag.go.id</h2></a></li>
+                      <li><a href="mailto:Pendis_416612@kemenag.go.id" class="text-white">Pendis_416612@kemenag.go.id</a></li>
+                      <li><a href="mailto:Bimas_416611@kemenag.go.id" class="text-white">Bimas_416611@kemenag.go.id</a></li>
+                      <li><a href="mailto:PHU_416613@kemenag.go.id" class="text-white">PHU_416613@kemenag.go.id</a></li>
+                    </ul>
+                  </div>
+            
+                  <!-- Sosial Media -->
+                  <div class="col-md-4 kiri" style="padding-top: 20px;">
+                    <h5 class="sosmed"><strong>Sosial Media</strong></h5>
+                    <a href="https://web.facebook.com/Benikemenaglebak" target="_blank" class="text-white me-2">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kemenag_lebak?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white me-2">
+                      <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@humaskemenaglebak4842" target="_blank" class="text-white me-2">
+                      <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                </div>
+                </div>
+                <div class="text-center mt-4">
+                  <p>© 2024 Kementerian Agama Lebak</p>
+                </div>
+              </div>
+            </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
