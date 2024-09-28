@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  background-color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+nav {
+  margin-top: -20px;
+  background-color: #1E2A5E;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+ul.dropdown-menu {
+  background-color: #D9D9D9;
+}
+
+ul.dropdown-menu, a.dropdown-item:hover{
+  color: #0066cc;
+}
+
+.nav-link.dropdown-toggle {
+  color: white;
+}
+
+/* CSS untuk dropdown ketika hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Menghindari animasi drop */
+}
+
+.navbar-nav .dropdown-menu {
+  display: none; /* Default menu dropdown tidak terlihat */
+}
+
+.navbar-nav .dropdown:hover > .nav-link {
+  color: #55679C; /* Warna link saat hover */
+}
+
+.navbar-text {
+  margin-right: 50px;
+}
+
+.container.my-5, img {
+  border-radius: 2%;
+}
+
+.navbar-clock {
+  margin-right: 20px;
+  color: white;
+}
+/*berita utama*/
+
+.heading {
+  font-size: 35px;
+  color: #55679C;
+  text-shadow: 0 3px 5px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+}
+
+/*.row.atas {
+  border-radius: 2%;
+  background-color: rgba(202, 202, 202, 0.5);
+
+}*/
+
+.col-12 {
+  border-radius: 2%;
+  max-height: 650px;
+  overflow: hidden;
+}
+
+.corousel-inner, img {
+  margin-bottom: 20px;
+}
+
+.carousel-inner.berita-utama {
+  border-radius: 2%;
+  /*background-color: #D2E0FB;*/
+}
+
+.carousel-item.active.berita-utama {
+  padding: 50px;
+  margin-bottom: 15px;
+}
+
+.carousel-item.berita-utama {
+  padding: 50px;
+  margin-bottom: 15px;
+}
+
+.col-12.berita-utama {
+  width: 800px;
+}
+
+.col-12.berita-utama, img {
+  width: 100%;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+
+/* Mengatur lebar scrollbar untuk browser WebKit (Chrome, Safari, dll.) */
+::-webkit-scrollbar {
+  width: 6px; /* Lebar scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Warna scrollbar */
+  border-radius: 10px; /* Membuat sudut scrollbar lebih bulat */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Warna scrollbar saat dihover */
+}
+
+.card-text {
+  color: rgb(32, 28, 28);
+  text-align: justify;
+}
+
+.card-body h2:hover {
+  color: blue;
+}
+
+.carousel-caption {
+  bottom: 20px;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  /* Add this to make the caption visible on all screens */
+  display: block !important;
+}
+
+.corousel-caption, h2:hover{
+  color: #0066cc;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 768px) {
+  .carousel-caption {
+    font-size: 14px;
+  }
+  .carousel-caption h2 {
+    font-size: 18px;
+  }
+  .carousel-caption p {
+    font-size: 12px;
+  }
+}
+
+/* Media query for extra small screens */
+@media only screen and (max-width: 480px) {
+  .carousel-caption {
+    font-size: 12px;
+  }
+  .carousel-caption h2 {
+    font-size: 14px;
+  }
+  .carousel-caption p {
+    font-size: 10px;
+  }
+}
+
+.article-title, h3:hover {
+  color: #0066cc;
+}
+
+
+/* sidebar*/
+.sidebar {
+  background-color: #D2E0FB;
+  border: none;
+  border-radius: 2%;
+  max-height: 650px;
+  overflow-y: auto;
+  margin-top: 5px;
+  padding: 12px;
+}
+
+.row.sidebar {
+  border-left: 2 solid #0066cc;
+  border-bottom: 3px solid #D9D9D9;
+  padding-bottom: 5px;
+}
+
+.col-md-4.sidebar {
+  width: 500px;
+}
+
+/*berita madrasah*/
+.container.mt-5.berita-madrasah {
+  margin-top: -20px;
+}
+
+.img-fluid.me-3 {
+  width: 150px;
+  height: 150px;
+}
+
+.category-label {
+  font-size: 0.75rem;
+  background-color: #0066cc;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.text-madrasah {
+  text-decoration: none;
+  color: black;
+}
+
+.article-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.article-date {
+  font-size: 0.85rem;
+  color: gray;
+}
+.article-row {
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 20px;
+}
+
+.berita-madrasah, .d-flex {
+  margin-bottom: 0px;
+}
+
+.d-flex, .article-title h3:hover {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.berita-madrasah, .article-title {
+  color: black;
+  text-decoration: none;
+}
+
+/* galeri utama */
+.card.galeri-utama {
+  height: auto;
+  transition: max-height 0.3s ease, transform 0.3s ease;
+  max-height: 600px; /* Tinggi default card */
+  overflow: hidden; /* Agar teks yang berlebihan tidak ditampilkan */
+  margin: 0 auto;
+}
+
+.card.galeri-utama.enlarged {
+  transform: scale(1.1); /* Membesarkan card */
+  z-index: 10; /* Agar card yang diperbesar muncul di atas yang lain */
+  max-height: none; /* Izinkan tinggi mengikuti konten */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 210px;
+  max-height: 300px;
+  object-fit: cover; /* Gambar akan dipotong agar menutupi seluruh elemen gambar tanpa distorsi.*/
+  transition: transform 0.5s ease; /*Menambahkan transisi halus selama 0.3 detik pada transformasi.*/
+}
+
+.card-img-top:hover {
+  transform: scale(1.1); /*Gambar diperbesar sedikit ketika pengguna mengarahkan kursor ke gambar.*/
+}
+
+.card-body.galeri-utama {
+  display: flex;
+  flex-direction: column; /*elemen ditata secara vertikal menggunakan flexbox.*/
+  justify-content: center; /*enyusun konten di tengah secara horizontal dan vertikal.*/
+  text-align: center;
+  padding: 15px;
+}
+
+.card-title.galeri-utama {
+  font-size: calc(0.5rem + 0.5vw);
+  margin-bottom: 0.25rem;
+} 
+
+.card-title.galeri-utama a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.card-title.galeri-utama a:hover {
+  color: #0056b3;
+}
+
+.caption {
+  font-size: 10px;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+.card-text.galeri-utama {
+  font-size: calc(0.5rem + 0.3vw);
+  margin-top: 0;
+  overflow: hidden;
+  max-height: 40px;
+  transition: max-height 0.3s ease;
+}
+
+.card-text.galeri-utama.expanded {
+  max-height: 100px;
+}
+
+.col-md-3.galeri-utama {
+  margin-bottom: 10px;
+}
+
+.row.galeri-utama {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+@media (max-width: 768px) {
+  .card.galeri-utama {
+    width: 180%;
+  }
+  .card-img-top {
+    max-height: 200px;
+  }
+}
+
+.carousel-control-prev.galeri-utama,
+.carousel-control-next.galeri-utama {
+  width: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  font-size: 2rem;
+}
+
+.carousel-control-prev.galeri-utama:hover,
+.carousel-control-next.galeri-utama:hover {
+  opacity: 1;
+  color: yellow;
+}
+
+.toggle-caption {
+  font-size: calc(0.3rem + 0.2vw);
+}
+
+.card.enlarged {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+/* footer */
+
+.text-white.py-4 {
+  background-color: #1E2A5E;
+  width: 100%;
+}
+
+.row.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.row.footer a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+footer .col-md-4.tengah {
+  padding-left: 20px;
+  padding-top: 20px;
+  text-align: justify;
+}
+
+.col-md-4.tengah .text-white:hover {
+  color: #0066cc;
+}
+
+footer, .sosmed {
+  margin-bottom: 20px;
+}
+
+footer, .sosmed, i {
+  margin-right: 20px;
+}
+
+
+

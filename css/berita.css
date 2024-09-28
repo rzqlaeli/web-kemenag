@@ -1,0 +1,187 @@
+
+body {
+    background-color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  nav {
+    margin-top: -20px;
+    background-color: #1E2A5E;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  ul.dropdown-menu {
+    background-color: #D9D9D9;
+  }
+  
+  ul.dropdown-menu, a.dropdown-item:hover{
+    color: #0066cc;
+  }
+  
+  .nav-link.dropdown-toggle {
+    color: white;
+  }
+  
+  /* CSS untuk dropdown ketika hover */
+  .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Menghindari animasi drop */
+  }
+  
+  .navbar-nav .dropdown-menu {
+    display: none; /* Default menu dropdown tidak terlihat */
+  }
+  
+  .navbar-nav .dropdown:hover > .nav-link {
+    color: #55679C; /* Warna link saat hover */
+  }
+  
+  .navbar-text {
+    margin-right: 50px;
+  }
+  
+  .navbar-clock {
+    margin-right: 20px;
+    color: white;
+  }
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: '>';
+}
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.title span {
+    border-bottom: 2px solid #007bff;
+}
+
+.foto-admin {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.publish {
+    float: right;
+}
+
+.foto-berita {
+    height: 400px;
+    width: 600px;
+    border-radius: 2%;
+}
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.content {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+/* Optional untuk memastikan tinggi kolom seimbang */
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+
+.content, p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-top: 15px;
+}
+
+.nama-editor, .nama-fotografer {
+    color: black;
+}
+
+.content.finish {
+    display: flex;
+    border-top: 1px solid #1E2A5E;
+    border-bottom: 1px solid #1E2A5E;
+}
+
+.fotografer {
+    float: right;
+    margin-left: 900px;
+}
+
+@media (max-width: 768px) {
+    .content.finish {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .fotografer {
+        margin-left: 0;
+        float: none;
+        margin-top: 10px;
+    }
+
+    .editor, .fotografer {
+        text-align: left;
+    }
+
+    .nama-editor, .nama-fotografer {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+/* footer */
+
+.text-white.py-4 {
+    background-color: #1E2A5E;
+    width: 100%;
+  }
+  
+  .row.footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .row.footer a:hover {
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+footer .col-md-4.tengah {
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.col-md-4.tengah .text-white:hover {
+    color: #0066cc;
+}
+
+footer, .sosmed {
+    margin-bottom: 20px;
+}
+
+footer, .sosmed, i {
+    margin-right: 20px;
+}
