@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(60deg, #25577a,rgb(172, 230, 239));
+
+}
+
+.wrapper{
+    width: 400px;
+    height: 380px;
+    background: linear-gradient(60deg, #25577a,rgb(172, 230, 239));
+    color: rgb(24, 23, 23);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+.wrapper h1{
+    text-align: center;
+    text-shadow: rgb(22, 33, 39);
+    font-size: 30px;
+    margin-top: 15px;
+    padding: 0px 5px;
+}
+.wrapper input-box{
+    width: 100%;
+    height: 50px;
+    margin: 50px 0;
+}
+.input-box input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(75, 114, 154);
+    border-radius: 10px;
+    margin-top: 25px;
+    font-size: 20px;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color: white;
+    font-size: 20px; 
+}
+
+.input-box i{
+    position:absolute;
+    margin-top: 35px;
+    margin-left: -40px;
+    font-size: 20px;
+}
+.wrapper .ingat-lupa{
+    display: flex;
+    position: center;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 20px 0px 20px;
+}
+
+.ingat-lupa label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+.ingat-lupa a{
+    color: rgb(70, 9, 213);
+    text-decoration: none;
+}
+.ingat-lupa a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .button{
+    width: 100%;
+    height: 45px;
+    background: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.wrapper .register-link {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
